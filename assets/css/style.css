@@ -38,11 +38,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .header {
+    padding-top: 30px;
     position: absolute;
     top: 0%;
     left: 0%;
     right: 0%;
     z-index: 1000;
+}
+
+.header__inner {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -58,13 +66,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+
     color: #fff;
     text-decoration: none;
 
     transition: color .2s linear;
 }
 
+.nav__link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38e;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
 .nav__link:hover {
     color: #fce38e;
 }
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+
 /* font-family: 'Kaushan Script', cursive; */
