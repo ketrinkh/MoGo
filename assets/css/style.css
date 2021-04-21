@@ -169,9 +169,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Slider */
 
 .slider {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: space-between;   
 }
 
 .slider__item {
