@@ -277,11 +277,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 90px;
 }
 
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
 .s1__images {
-    width: 1300px;
+    width: 380px;
+}
+
+.s1__images:hover .fig img {
+    opacity: .1;
 }
 
 .fig {
-    margin-right: 30px;
-    /* width: ; */
+    background: linear-gradient(to bottom, #f38181, #fce38a );
+}
+
+.fig img {
+    display: block;
+    transition: opacity .1s linear;
 }
