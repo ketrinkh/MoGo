@@ -283,10 +283,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s1__images {
-    width: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.s1__images:hover .fig img {
+.fig:hover img {
     opacity: .1;
 }
 
