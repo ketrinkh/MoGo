@@ -313,16 +313,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .statistic__inner {
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
 }
 
 .statistic__item {
     width: 22%;
     padding: 20px 0;
     position: relative;
-
-
-    border-top: 3px solid #fff;
+    text-align: center;
     opacity: 1;
 
     font-size: 18px;
