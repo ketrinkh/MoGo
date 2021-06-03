@@ -317,17 +317,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .statistic__item {
-    width: 22%;
-    padding: 20px 0;
+    
+    padding: 20px 70px 39px;
     position: relative;
     text-align: center;
-    opacity: 1;
+    border-right: 3px solid #acecdd; 
 
     font-size: 18px;
     color: #fff;
-    
-    text-transform: uppercase;
 
+}
+.statistic__item1 {
+    padding: 20px 70px 39px;
+    position: relative;
+    text-align: center;
+    border-right: 3px solid #acecdd;
+    border-left: 3px solid #acecdd; 
+
+    font-size: 18px;
+    color: #fff;
 }
 
 .statistic__num {
