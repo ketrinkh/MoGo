@@ -277,6 +277,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 90px;
 }
 
+/* S1_About */
+
 .about {
     display: flex;
     justify-content: space-between;
@@ -297,6 +299,97 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fig img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+/* Section 2 */
+
+.s2 {
+    display: flex;
+    width: 100%;
+    height: 650px;
+
+    background: #ffffff;    
+    background-size: cover ;
+
+    padding-top: 80px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000;
+}
+
+.s2__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.s2__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s2__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s2__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 50px;
+}
+
+/* S2_Services */
+
+.services1 {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(213, 213, 213);  
+}
+
+.services2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.s2__images {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.serv:hover {
+    color: #32bf9ed4;
+    opacity: .8;
+}
+
+.serv h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.serv {
+    margin-right: 30px; /* Отступ справа */
+    margin-bottom: 50px;
+}
+
+.serv img {
     display: block;
     transition: opacity .1s linear;
 }
