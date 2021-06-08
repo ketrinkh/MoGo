@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0%;
     left: 0%;
     right: 0%;
-    z-index: 1000;
+    
 }
 
 .s2__inner {
@@ -357,21 +357,17 @@ h1, h2, h3, h4, h5, h6 {
 /* S2_Services */
 
 .services1 {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 2px solid rgb(213, 213, 213);  
+    border-bottom: 2px solid rgb(213, 213, 213);    
 }
 
 .services2 {
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .s2__images {
     width: 100%;
-    display: flex;
-    justify-content: space-around;  
+    display: flex; 
+    justify-content:space-evenly;
 }
 
 .serv:hover {
@@ -381,15 +377,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .serv h3 {
     text-transform: uppercase;
-    margin-bottom: 10px;
+    grid-area: h;
+    align-self: center;
 }
 
 .serv {
-    margin-right: 30px; /* Отступ справа */
+    display: grid;
+    grid-template-columns: .2fr 1fr .1fr;
+    grid-template-rows: 0.3fr;
+    grid-template-areas: 
+    "i h"
+    ". p";
+    margin-right: 30px; 
     margin-bottom: 50px;
 }
 
+.serv p {
+    grid-area: p;
+}
+
 .serv img {
-    display: block;
+    grid-area: i;
     transition: opacity .1s linear;
 }
