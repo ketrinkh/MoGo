@@ -22,7 +22,7 @@ function animate() {
     }
     context.fillRect(rectX, rectY, 50, 50);
     context.clearRect(rectX, rectY, 50, 50);
-    console.log('hello');
+    // console.log('hello');
 
     window.requestAnimationFrame(animate);
 }
