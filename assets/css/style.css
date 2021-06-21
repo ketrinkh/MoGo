@@ -442,3 +442,45 @@ h1, h2, h3, h4, h5, h6 {
     grid-area: i;
     transition: opacity .1s linear;
 }
+
+.s3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+
+    background: url(../images/feauture_bg.jpg)
+    center
+    no-repeat;
+
+    background-size: cover;
+}
+
+.photo1 {
+    display: grid;
+    grid-template-columns: 270px 570px 360px ;
+    grid-template-rows: 230px;
+    grid-template-areas: 
+    ". ."
+    ". i";
+}
+
+.photo1 img {
+    justify-items: end;
+    grid-area: i;
+}
+
+.photo2 {
+    display: grid;
+    grid-template-columns: 690px 275px 235px ;
+    grid-template-rows: 460px;
+    grid-template-areas: 
+    ". ."
+    ". i";
+}
+
+.photo2 img {
+    justify-items: end;
+    grid-area: i;
+}
