@@ -452,38 +452,35 @@ h1, h2, h3, h4, h5, h6 {
     height: 900px;
 
     background: url(../images/feauture_bg.jpg)
-    /* center */
     no-repeat;
 
     background-size: cover;
 }
 
 .photo1 {
-    height: 660px;
+    height: 620px;
     display: grid;
     grid-template-columns: 270px 570px 360px ;
-    grid-template-rows: 0px;
+    grid-template-rows: 620px;
     grid-template-areas: 
-    ". ."
     ". i";
 }
 
 .photo1 img {
-    justify-items: end;
     grid-area: i;
+    bottom: 0;
 }
 
 .photo2 {
     display: grid;
     grid-template-columns: 690px 275px 235px ;
-    grid-template-rows: 240px;
+    grid-template-rows: 240px 477px;
     grid-template-areas: 
     ". ."
     ". i";
 }
 
 .photo2 img {
-    justify-items: end;
     grid-area: i;
 }
 
@@ -518,5 +515,5 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
 
     background-color: #e78080 ;
-    margin: 50px auto 50px;
+    margin: 50px auto 7px;
 }
