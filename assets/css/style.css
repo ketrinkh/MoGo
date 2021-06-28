@@ -443,6 +443,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity .1s linear;
 }
 
+/* Section 3 */
+
 .s3 {
     margin-top: auto;
     display: flex;
@@ -516,4 +518,89 @@ h1, h2, h3, h4, h5, h6 {
 
     background-color: #e78080 ;
     margin: 50px auto 7px;
+}
+
+/* Section 4 */
+
+.s4 {
+    justify-content: center;
+    width: 100%;
+    height: 1140px;
+
+    background-size: cover;
+}
+
+.s4__inner {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s4__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s4__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s4__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 50px;
+}
+
+.s4__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    margin: 0 auto 90px;
+}
+
+.info_services {
+    display: grid;
+    grid-template-columns: 570px 30px 600px;
+    grid-template-rows: 60px 180px 10px 60px 10px 60px;
+    grid-template-areas: 
+    "i . p"
+    ". . t"
+    ". . ."
+    ". . c"
+    ". . ."
+    ". . w";
+}
+
+.info_services img {
+    grid-area: i;
+}
+
+.row1 {
+    grid-area: p;
+}
+
+.info_services p {
+    text-transform: capitalize;
+    grid-area: t;
+}
+
+.row2 {
+    grid-area: c;
+}
+
+.row3 {
+    grid-area: w;
 }
