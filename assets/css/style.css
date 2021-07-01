@@ -613,7 +613,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f0f0f0;
     bottom: 0%;
     margin-top: 100px;
-
 }
 
 .quote {
@@ -720,16 +719,62 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 90px;
 }
 
-.our_team {
+ /* our team  */
 
+.our_team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.our_team img:hover img {
+.s5__img {
+    grid-area: i;
+    background: linear-gradient(to bottom, #f38181, #fce38a );
+}
+
+.s5__img:hover img {
     opacity: .1;
 }
 
-.our_team img {
-    background: linear-gradient(to bottom, #f38181, #fce38a );
+.s5__img img {
     display: block;
-    transition: opacity .1s linear;
+    transition: opacity .3s linear;
+}
+
+.name {
+    grid-area: n;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.industry {
+    grid-area: d;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.worker {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 470px 50px 50px;
+    grid-template-areas: 
+    "i"
+    "n"
+    "d";
+    justify-items: center;
+}
+
+/* Logos */
+
+.logos {
+    width: 100%;
+    height: 250px;
+    background-color: #f0f0f0;
+    bottom: 0%;
+    margin-top: 100px;
+}
+
+.logos img {
+    margin-top: 60px;
 }
