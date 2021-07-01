@@ -604,3 +604,68 @@ h1, h2, h3, h4, h5, h6 {
 .row3 {
     grid-area: w;
 }
+
+/* Comment */
+
+.comment {
+    width: 100%;
+    height: 290px;
+    background-color: #f0f0f0;
+    bottom: 0%;
+    margin-top: 100px;
+
+}
+
+.quote {
+    display: grid;
+    grid-template-columns: 60px 250px 770px 60px;
+    grid-template-rows: 50px 110px;
+    grid-template-areas:
+    ". . . ."
+    "l i t r" ;
+    justify-items: center;
+}
+
+.quote .arrow_l {
+    grid-area: l;
+    padding: 80px 30px 80px;
+    transition: background-color .3s linear;
+}
+.quote .arrow_l:hover {  
+    background-color: #e0dedec4;
+}
+
+.quote .speech {
+    grid-area: i;
+    margin: 10px;
+    padding: 50px 50px 50px;
+    border: 5px solid #a0dfd0;
+}
+
+.quote h4 {
+    grid-area: t;
+    margin-right: 60px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.quote .arrow_r {
+    grid-area: r;
+    padding: 80px 30px 80px;
+    transition: background-color .3s linear;
+}
+.quote .arrow_r:hover {
+    background-color: #e0dedec4;
+}
+
+.quote h4 p::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 10px;
+}
+
+.autor {
+    font-family: 'Kaushan Script', cursive;
+}
+
