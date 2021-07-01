@@ -669,3 +669,67 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Kaushan Script', cursive;
 }
 
+/* Section 5 */
+
+.s5 {
+    justify-content: center;
+    width: 100%;
+    height: 1300px;
+
+    background-size: cover;
+}
+
+.s5__inner {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s5__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s5__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s5__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 50px;
+}
+
+.s5__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    margin: 0 auto 90px;
+}
+
+.our_team {
+
+}
+
+.our_team img:hover img {
+    opacity: .1;
+}
+
+.our_team img {
+    background: linear-gradient(to bottom, #f38181, #fce38a );
+    display: block;
+    transition: opacity .1s linear;
+}
