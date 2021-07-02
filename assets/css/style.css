@@ -779,3 +779,154 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 60px;
 }
 
+/* Section 6 */
+
+.s6 {
+    justify-content: center;
+    width: 100%;
+    height: 2360px;
+
+    background-size: cover;
+}
+
+.s6__inner {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s6__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s6__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s6__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 50px;
+}
+
+.s6__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    margin: 0 auto 90px;
+}
+
+.photo-works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 390px 390px;
+    grid-template-areas: 
+    "a b c d"
+    "e f . g";
+    justify-items: center;
+    background: linear-gradient(to bottom, #f38181, #fce38a );
+
+}
+
+.work1 {
+    grid-area: a;
+    
+}
+.work2 {
+    grid-area: b;
+}
+.work3 {
+    grid-area: e;
+}
+.work4 {
+    grid-area: f;
+}
+.work5 {
+    grid-area: c;
+}
+.work6 {
+    grid-area: d;
+}
+.work7 {
+    grid-area: g;
+}
+
+.work1:hover {
+    opacity: .1;
+}
+ .work1 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work2:hover {
+    opacity: .1;
+}
+ .work2 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work3:hover {
+    opacity: .1;
+}
+ .work3 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work4:hover {
+    opacity: .1;
+}
+ .work4 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work5:hover {
+    opacity: .1;
+}
+ .work5 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work6:hover {
+    opacity: .1;
+}
+ .work6 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+.work7:hover {
+    opacity: .1;
+}
+ .work7 {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+/* Comment 2 */
+
+.comment2 {
+    width: 100%;
+    height: 210px;
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
