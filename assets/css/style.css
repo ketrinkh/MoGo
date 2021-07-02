@@ -930,3 +930,56 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 100px;
     margin-bottom: 130px;
 }
+
+/* Block s7 */
+
+.s7 {
+    justify-content: center;
+    width: 100%;
+    height: 830px;
+    background: url(../images/feauture_bg.jpg)
+    no-repeat;
+    background-size: cover;
+}
+
+.s7__inner {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.s7__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s7__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s7__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 50px;
+}
+
+.s7__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    margin: 0 auto 90px;
+}
