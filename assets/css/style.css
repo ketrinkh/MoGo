@@ -667,6 +667,15 @@ h1, h2, h3, h4, h5, h6 {
 .autor {
     font-family: 'Kaushan Script', cursive;
 }
+.autor::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 15px 10px 5px;
+}
 
 /* Section 5 */
 
@@ -784,7 +793,7 @@ h1, h2, h3, h4, h5, h6 {
 .s6 {
     justify-content: center;
     width: 100%;
-    height: 2360px;
+    height: 2290px;
 
     background-size: cover;
 }
@@ -845,24 +854,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .work1 {
     grid-area: a;
-    
+    z-index: 1;
 }
 .work2 {
+    z-index: 1;
     grid-area: b;
 }
 .work3 {
+    z-index: 1;
     grid-area: e;
 }
 .work4 {
+    z-index: 1;
     grid-area: f;
 }
 .work5 {
+    z-index: 1;
     grid-area: c;
 }
 .work6 {
+    z-index: 1;
     grid-area: d;
 }
 .work7 {
+    z-index: 1;
     grid-area: g;
 }
 
@@ -871,7 +886,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work1 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work2:hover {
@@ -879,7 +894,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work2 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work3:hover {
@@ -887,7 +902,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work3 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work4:hover {
@@ -895,7 +910,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work4 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work5:hover {
@@ -903,7 +918,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work5 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work6:hover {
@@ -911,7 +926,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work6 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .work7:hover {
@@ -919,16 +934,128 @@ h1, h2, h3, h4, h5, h6 {
 }
  .work7 {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
+
+.addition1 {
+    grid-area: a;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition1 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition1 h4 {
+        font-weight: lighter;
+    }
+
+.addition2 {
+    grid-area: b;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition2 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition2 h4 {
+        font-weight: lighter;
+    }
+
+.addition3 {
+    grid-area: e;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition3 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition3 h4 {
+        font-weight: lighter;
+    }
+
+.addition4 {
+    grid-area: f;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition4 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition4 h4 {
+        font-weight: lighter;
+    }
+
+.addition5 {
+    grid-area: c;
+    margin-top: 340px;
+    text-align: center;
+    color: white;
+}
+    .addition5 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition5 h4 {
+        font-weight: lighter;
+    }
+
+.addition6 {
+    grid-area: d;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition6 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition6 h4 {
+        font-weight: lighter;
+    }
+
+.addition7 {
+    grid-area: g;
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+    .addition7 h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .addition7 h4 {
+        font-weight: lighter;
+    }
 
 /* Comment 2 */
 
 .comment2 {
     width: 100%;
     height: 210px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 130px;
+}
+
+.quote .ellipse {
+    grid-area: i;
+}
+
+.autor::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 15px 10px 5px;
 }
 
 /* Block s7 */
@@ -936,7 +1063,7 @@ h1, h2, h3, h4, h5, h6 {
 .s7 {
     justify-content: center;
     width: 100%;
-    height: 830px;
+    height: 780px;
     background: url(../images/feauture_bg.jpg)
     no-repeat;
     background-size: cover;
@@ -979,9 +1106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* comment by clients */
 
-.clients {
-    border-bottom: 2px solid rgb(213, 213, 213);
-}
+
 
 .clients_1 , .clients_2 {
     width: 100%;
