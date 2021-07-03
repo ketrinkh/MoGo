@@ -974,12 +974,56 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
 
     background-color: #e78080 ;
-    margin: 50px auto 50px;
+    margin: 50px auto 90px;
 }
 
-.s7__text {
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0.6;
-    margin: 0 auto 90px;
+/* comment by clients */
+
+.clients {
+    border-bottom: 2px solid rgb(213, 213, 213);
+}
+
+.clients_1 , .clients_2 {
+    width: 100%;
+    display: flex; 
+    justify-content:space-evenly;
+}
+
+.client {
+    display: grid;
+    grid-template-columns: 30px 140px 380px 0px;
+    grid-template-rows: 30px 50px auto;
+    grid-template-areas: 
+    ". i h3"
+    ". i h4"
+    ". i p";
+    margin-right: 30px; 
+    margin-bottom: 50px;
+}
+
+.client img {
+    grid-area: i;
+    margin-right: 30px;
+}
+
+.client h3 {
+    grid-area: h3;
+}
+
+.client h4 {
+    grid-area: h4;
+}
+
+.client p {
+    grid-area: p;
+}
+
+.client h4::after {
+    content: "";
+    display: flex;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin-top: 15px;
 }
