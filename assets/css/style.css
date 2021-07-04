@@ -736,18 +736,31 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
+.worker {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 470px 50px 50px;
+    grid-template-areas: 
+    "i"
+    "n"
+    "d";
+    justify-items: center;
+}
+
 .s5__img {
     grid-area: i;
     background: linear-gradient(to bottom, #f38181, #fce38a );
+    z-index: 1;
 }
 
 .s5__img:hover img {
     opacity: .1;
+    z-index: 0;
 }
 
 .s5__img img {
     display: block;
-    transition: opacity .3s linear;
+    transition: opacity .4s linear;
 }
 
 .name {
@@ -761,18 +774,67 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
-}
+} 
 
-.worker {
+.networks {
+    margin-top: 200px;
+    grid-area: i;
+    width: 220px;
+    height: 55px;
     display: grid;
-    grid-template-columns: 380px;
-    grid-template-rows: 470px 50px 50px;
-    grid-template-areas: 
-    "i"
-    "n"
-    "d";
+    grid-template-columns: 55px 55px 55px 55px;
+    grid-template-rows: 55px;
+    grid-template-areas: "f t p i";
     justify-items: center;
+    background-color:#fce38a;  
+    z-index: -1;  
 }
+    .worker:hover .networks {
+        z-index: 1;
+    } 
+
+    .facebook {
+        grid-area: f;
+        border-right: 2px solid #e7808095;
+        padding: 15px 20px 15px ;
+        display: block;
+        transition: background-color .4s linear;
+    }
+        .facebook:hover {
+            background-color: #e78080;
+        }
+    .twitter {
+        grid-area: t;
+        border-right: 2px solid #e7808095;
+        padding: 17px 15px 17px ;
+        display: block;
+        transition: background-color .4s linear;
+    }
+        .twitter:hover {
+            background-color: #ffffff;
+        }
+    
+    .pinterest {
+        grid-area: p;
+        border-right: 2px solid #e7808095;
+        padding: 15px 17px 15px ;
+        display: block;
+        transition: background-color .4s linear;
+    }
+        .pinterest:hover {
+            background-color: #ffffff;
+        }
+    
+    .instagram {
+        grid-area: i;
+        padding: 15px 15px 15px ;
+        display: block;
+        transition: background-color .4s linear;
+    }
+        .instagram:hover {
+            background-color: #ffffff;
+        }
+    
 
 /* Logos */
 
