@@ -573,13 +573,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .info_services {
     display: grid;
-    grid-template-columns: 600px auto 540px;
+    grid-template-columns: 600px 1fr;
     grid-template-rows: 60px 180px 60px 60px;
     grid-template-areas: 
-    "i k p"
-    "i t t"
-    "i l c"
-    "i m w";
+    "i k"
+    "i t"
+    "i l"
+    "i m";
     
 }
 
@@ -594,13 +594,17 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 .row1 {
-    grid-area: p;
+    /* grid-area: p; */
+    align-self: center;
+    /* border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc; */
+}
+.picture {
+    display: flex;
+    grid-area: k;
+    padding: 15px;
     border-top: 1px solid #dddcdc;
     border-bottom: 1px solid #dddcdc;
-}
-.picture img {
-    grid-area: k;
-    padding: 15px 15px 15px 15px;
 }
 
 .info_services p {
@@ -611,32 +615,48 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #dddcdc;
 }
 
-.equalizer img {
+.equalizer {
+    display: flex;
     grid-area: l;
-    padding: 14px 16px 16px 14px;
+    padding: 15px;
     margin-bottom: 10px;
+    border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
+}
+
+.equalizer img {
+    align-self: center;
+    width: 60px;
+    height: 30px;
+}
+
+.row2 {
+    align-self: center;
+    /* grid-area: c; */
+    /* margin-bottom: 10px; */
     /* border-top: 1px solid #dddcdc;
     border-bottom: 1px solid #dddcdc; */
 }
 
-.row2 {
-    grid-area: c;
-    margin-bottom: 10px;
+.bullseye {
+    grid-area: m;
+    padding: 15px;
+    display: flex;
     border-top: 1px solid #dddcdc;
     border-bottom: 1px solid #dddcdc;
 }
 
 .bullseye img {
-    grid-area: m;
-    padding: 15px 15px 15px 15px;
-    /* border-top: 1px solid #dddcdc;
-    border-bottom: 1px solid #dddcdc; */
+    align-self: center;
+    width: 60px;
+    height: 30px;
 }
 
 .row3 {
     grid-area: w;
-    border-top: 1px solid #dddcdc;
-    border-bottom: 1px solid #dddcdc;
+    align-self: center;
+    /* border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc; */
 }
 
 /* Comment */
