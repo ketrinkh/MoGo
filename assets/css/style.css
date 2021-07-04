@@ -573,36 +573,70 @@ h1, h2, h3, h4, h5, h6 {
 
 .info_services {
     display: grid;
-    grid-template-columns: 570px 30px 600px;
-    grid-template-rows: 60px 180px 10px 60px 10px 60px;
+    grid-template-columns: 600px auto 540px;
+    grid-template-rows: 60px 180px 60px 60px;
     grid-template-areas: 
-    "i . p"
-    ". . t"
-    ". . ."
-    ". . c"
-    ". . ."
-    ". . w";
+    "i k p"
+    "i t t"
+    "i l c"
+    "i m w";
+    
 }
 
 .info_services img {
     grid-area: i;
+    padding-right: 30px;
 }
 
+.info_services b {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
 .row1 {
     grid-area: p;
+    border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
+}
+.picture img {
+    grid-area: k;
+    padding: 15px 15px 15px 15px;
 }
 
 .info_services p {
     text-transform: capitalize;
     grid-area: t;
+    margin-bottom: 10px;
+    /* border-top: 1px solid #dddcdc; */
+    border-bottom: 1px solid #dddcdc;
+}
+
+.equalizer img {
+    grid-area: l;
+    padding: 14px 16px 16px 14px;
+    margin-bottom: 10px;
+    /* border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc; */
 }
 
 .row2 {
     grid-area: c;
+    margin-bottom: 10px;
+    border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
+}
+
+.bullseye img {
+    grid-area: m;
+    padding: 15px 15px 15px 15px;
+    /* border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc; */
 }
 
 .row3 {
     grid-area: w;
+    border-top: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;
 }
 
 /* Comment */
