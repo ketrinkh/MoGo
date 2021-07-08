@@ -1427,3 +1427,96 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #e78080 ;
     margin: 35px auto 90px;
 }
+
+.contacts{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 500px 420px 280px;
+    grid-template-rows: 430px;
+    grid-template-areas: "m b i";
+}
+    .general {
+        grid-area: m;
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 60px auto 60px 50px 120px;
+        grid-template-areas: 
+        "m"
+        "t"
+        "a"
+        "c"
+        "s";
+    }
+        .general h1 {
+            grid-area: m;
+            font-weight: 700;
+            font-size: 46px;
+            color: rgb(208, 208, 208);
+        }
+        .general h4 {
+            grid-area: t;
+            align-self: center;
+            font-weight: 500;
+        }
+        .social_header {
+            grid-area: a;
+            align-self: center;
+        }
+        .social_content {
+            grid-area: c;
+            align-self: center;
+            font-style: italic;
+        }
+        .subscribe {
+            margin-top: 15px;
+            grid-area: s;
+            width: 100%;
+            max-width: 380px;
+            display: flex;
+        }
+.social_header::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 1px;
+
+    background-color: #cccccc ;
+    margin-top: 20px;
+}
+
+
+.social_content img {
+    margin-left: 10px;
+}
+
+.subscribe_input {
+    width: 60%;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 12px;
+    font-size: 15px;
+    font-style: italic;
+    color: #333;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.subscribe_input::placeholder {
+    color: #ccc;
+}
+
+.subscribe_btn {
+    width: 40%;
+    height: 40px;
+    background: #aee0d2;
+    border: 0;
+    color: #fff;
+    padding: 12px 30px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
