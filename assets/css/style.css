@@ -1222,8 +1222,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* comment by clients */
 
-
-
 .clients_1 , .clients_2 {
     width: 100%;
     display: flex; 
@@ -1268,3 +1266,122 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #e78080 ;
     margin-top: 15px;
 }
+/* Section 8 */
+
+.s8 {
+    justify-content: center;
+    width: 100%;
+    height: 1420px;
+
+    background-size: cover;    
+}
+
+.s8__inner {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.s8__title {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.30px;
+}
+
+.s8__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+}
+
+.s8__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #e78080 ;
+    margin: 50px auto 90px;
+}
+
+.posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_1, .post_2, .post_3 {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 240px 50px auto 40px;
+    grid-template-areas: 
+    "i"
+    "n"
+    "d"
+    "a";
+}
+    .s8__img {
+        grid-area: i;
+    }
+    .title {
+        grid-area: n;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    .suptitle {
+        grid-area: d;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .suptitle::after {
+        content: "";
+        display: block;
+        width: auto;
+        height: 1px;
+        background-color: #dddddd;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .actions {
+        grid-area: a;
+        width: 110px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: auto 50px auto 50px;
+        grid-template-rows: 40px;
+        grid-template-areas: "f b t a";
+    }
+        .view {
+            grid-area: f;
+            align-self: center;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .actions b {
+            align-self: center;
+            grid-area: b;
+            font-weight: 300;
+            font-style: italic;
+
+        }
+        .speech_bubble_2 {
+            grid-area: t;
+            padding-left: 5px;
+            padding-right: 5px;
+            align-self: center;
+        }
+        .actions a {
+            align-self: center;
+            grid-area: a;
+            font-style: italic;
+        }
