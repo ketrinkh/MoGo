@@ -1394,7 +1394,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     background: url(../images/bg_maps.png) no-repeat;
     align-content: center;
-    /* background-size: cover;     */
 }
 
 .maps__inner {
@@ -1428,24 +1427,29 @@ h1, h2, h3, h4, h5, h6 {
     margin: 35px auto 90px;
 }
 
+/* Contacts */
+
 .contacts{
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 500px 420px 280px;
-    grid-template-rows: 430px;
+    grid-template-columns: 480px 420px 300px;
+    grid-template-rows: 360px ;
     grid-template-areas: "m b i";
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 70px;
 }
     .general {
         grid-area: m;
         display: grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 60px auto 60px 50px 120px;
+        grid-template-columns: 450px;
+        grid-template-rows: 60px auto 60px 50px 70px;
         grid-template-areas: 
         "m"
         "t"
         "a"
         "c"
         "s";
+        margin-right: 30px;
     }
         .general h1 {
             grid-area: m;
@@ -1473,14 +1477,15 @@ h1, h2, h3, h4, h5, h6 {
             width: 100%;
             max-width: 380px;
             display: flex;
+            align-content: center;
         }
 .social_header::after {
     content: "";
     display: block;
-    width: 500px;
+    width: 480px;
     height: 1px;
 
-    background-color: #cccccc ;
+    background-color: #e7e7e7 ;
     margin-top: 20px;
 }
 
@@ -1520,3 +1525,68 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
+
+.blogs {
+    height: 360px;
+    grid-area: b;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 60px 110px 110px 80px;
+    grid-template-areas: 
+    "z"
+    "h"
+    "k"
+    "l";
+    align-content:flex-start;
+}
+    .blogs_logo {
+        grid-area: z;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .blog1 {
+        grid-area: h;
+        display: grid;
+        grid-template-columns: 140px 220px;
+        grid-template-rows: .75% .25%;
+        grid-template-areas: 
+        "i n"
+        "i d";
+        padding-bottom: 30px;
+    }
+        .blog1 img {
+            grid-area: i;
+            padding-right: 20px;
+        }
+        .blog_content a {
+            grid-area: n;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #333;
+        }
+        .blog_data {
+            grid-area: d;
+            color: #ccc;
+            font-style: italic;
+        }
+    .blog2 {
+        grid-area: k;
+        display: grid;
+        grid-template-columns: 140px 220px;
+        grid-template-rows: .75% .25%;
+        grid-template-areas: 
+        "i n"
+        "i d";
+        padding-bottom: 30px;       
+    }
+    .blog3 {
+        grid-area: l;
+        display: grid;
+        grid-template-columns: 140px 220px;
+        grid-template-rows: .75% .25%;
+        grid-template-areas: 
+        "i n"
+        "i d";
+        }
